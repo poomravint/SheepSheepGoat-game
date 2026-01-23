@@ -122,8 +122,8 @@ const Conclusion = ({ results, start, realans }) => {
 
       {goatresultpopup && (<div className="modal-backdrop">
           <div className="modal-goatpopup">
-            {goatresult === true && <h3>Stupid sheep you were trick by a Goat</h3>}
-            {goatresult === false && <h3>Goat is a GOAT not a Sheep</h3>}
+            {goatresult === true && <h3>Sheep were trick by a Goat</h3>}
+            {goatresult === false && <h3>Goat is a Goat not a Sheep</h3>}
             <div className="modal-actions">
               <button onClick={closegoatresult}>Close</button>
             </div>

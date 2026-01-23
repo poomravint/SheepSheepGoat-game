@@ -16,6 +16,7 @@
 }
 
 .white-team {
+  color: #000000;
   border: 2px solid #333;
   background-color: #ffffff;
   text-align: center;
@@ -44,8 +45,8 @@
 
 .inputrole-box button {
   
-  height: 30px;
-  border-radius: 5px;
+  height: 26px;
+  /* border-radius: 5px; */
   border: none;
   background-color: rgb(114, 127, 243);
   color: white;
