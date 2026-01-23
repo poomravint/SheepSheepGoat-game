@@ -1,7 +1,7 @@
 import React from "react";
 import "./Topic.css"
 
-function Topic() {
+const   Topic = () => {
   return (
     <>
       <div className="topic-content">
