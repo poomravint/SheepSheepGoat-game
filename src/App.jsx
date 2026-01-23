@@ -14,6 +14,7 @@ function App() {
   const [grouprole, setGrouprole] = useState([])
   const [results, setResults] = useState([])
   const [start, setStart] = useState(false)
+  const [realans, setRealAns] = useState("")
 
   return (
     <>
@@ -22,9 +23,9 @@ function App() {
         <Namebox groupname={groupname} setGroupname={setGroupname}/>
         <Rolebox grouprole={grouprole} setGrouprole={setGrouprole}/>
       </div>
-      <Matchingbox groupname={groupname} grouprole={grouprole} results={results} setResults={setResults} start={start} setStart={setStart}/>
+      <Matchingbox groupname={groupname} grouprole={grouprole} results={results} setResults={setResults} start={start} setStart={setStart} setRealAns={setRealAns}/>
       <Showmatching results={results} start={start} setStart={setStart}/>
-      <Conclusion results={results} start={start}/>
+      <Conclusion results={results} start={start} realans={realans}/>
     </>
   )
 }
