@@ -1,0 +1,27 @@
+.topic-content {
+   display: flex;
+   
+}
+
+.topic-white{
+  color: black;
+  border: 2px solid #ffffff;
+  background-color: #ffffff;
+  padding: 10px;
+
+}
+
+.topic-black{
+  color:#ffffff;
+  border: 2px solid #000000;
+  background-color: #000000;
+  padding: 10px;
+
+}
+
+.topic-goat{
+  color: black;
+  border: 2px solid #ffffff;
+  background-color: #ffffff;
+  padding: 10px;
+}
