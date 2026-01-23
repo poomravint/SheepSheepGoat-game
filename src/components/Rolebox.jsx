@@ -3,9 +3,9 @@ import { roles } from "./roleUtils";
 import "./Rolebox.css"
 
 const Rolebox = ({ grouprole, setGrouprole }) => {
-  const [white_num, setWhite_num] = useState(0);
-  const [black_num, setBlack_num] = useState(0);
-  const [goat_num, setGoat_num] = useState(0);
+  const [white_num, setWhite_num] = useState("");
+  const [black_num, setBlack_num] = useState("");
+  const [goat_num, setGoat_num] = useState("");
   const roleOptions = Object.keys(roles);
 
   const handleAddRole = () => {
@@ -49,7 +49,7 @@ const Rolebox = ({ grouprole, setGrouprole }) => {
           onChange={(e) => setGoat_num(e.target.value)}
           placeholder="Goat"
         />
-        <button onClick={handleAddRole}>Add</button> 
+        <button onClick={handleAddRole}>Set</button> 
       </div>
       
     </>

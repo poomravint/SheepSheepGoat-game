@@ -1,5 +1,8 @@
 .topic-content {
    display: flex;
+   justify-content: center;  /* จัดกึ่งกลางแนวนอน */
+  align-items: center;
+  margin: 20px auto;  
    
 }
 

@@ -6,6 +6,7 @@ import Topic from './components/Topic.jsx'
 import Namebox from './components/Namebox.jsx'
 import Rolebox from './components/Rolebox.jsx'
 import Matchingbox from './components/Matchingbox.jsx'
+import Showmatching from './components/Showmatching.jsx'
 
 function App() {
   const [groupname, setGroupname] = useState([])
@@ -20,6 +21,7 @@ function App() {
         <Rolebox grouprole={grouprole} setGrouprole={setGrouprole}/>
       </div>
       <Matchingbox groupname={groupname} grouprole={grouprole} results={results} setResults={setResults}/>
+      <Showmatching results={results}/>
     </>
   )
 }

@@ -7,7 +7,7 @@
 }
 
 .inputrole-box input {
-  width: 150px;             /* ความกว้างเท่ากัน */
+  width: 100px;             /* ความกว้างเท่ากัน */
   height: 23px;
   padding: 0 10px;
   border-radius: 10px;
@@ -18,15 +18,18 @@
 .white-team {
   border: 2px solid #333;
   background-color: #ffffff;
+  text-align: center;
 }
 .black-team {
   color: #ffffff;
   border: 2px solid #ffffff;
   background-color: #000000;
+  text-align: center;
 }
 .goat-team {
   border: 2px solid #ffffff;
   background-color: #999999;
+  text-align: center;
 }
 
 .white-team::placeholder {
@@ -42,9 +45,9 @@
 .inputrole-box button {
   
   height: 30px;
-  border-radius: 10px;
+  border-radius: 5px;
   border: none;
-  background-color: rgb(140, 211, 178);
+  background-color: rgb(114, 127, 243);
   color: white;
   cursor: pointer;
   font-weight: bold;
