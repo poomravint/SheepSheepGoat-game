@@ -11,14 +11,14 @@
   margin-bottom: 10px;
 }
 
-.card {
+.ccard {
   width: 120px;
   height: 170px;
   perspective: 1000px;
   cursor: pointer;
 }
 
-.card-inner {
+.ccard-inner {
   width: 100%;
   height: 100%;
   position: relative;
@@ -26,12 +26,12 @@
   transition: transform 0.6s;
 }
 
-.card-inner.flip {
+.ccard-inner.flip {
   transform: rotateY(180deg);
 }
 
-.card-front,
-.card-back {
+.ccard-front,
+.ccard-back {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -45,16 +45,16 @@
   color: black;
 }
 
-.card-front {
-  background-color: rgb(255, 255, 255);
-}
-.card-back {
-  color: white;
+.ccard-front {
   background-color: rgb(0, 0, 0);
+  color: white;
+}
+.ccard-back {
+  background-color: rgb(183, 184, 185);
   transform: rotateY(180deg);
 }
 
-/* .start-btn {
+.start-btn {
   
   padding: 8px 16px;
   border-radius: 8px;
@@ -63,6 +63,6 @@
   font-weight: bold;
   font-size: 14px;
   transition: 0.2s;
-  background-color: rgba(201, 36, 216, 0.966);
+  background-color: rgb(0, 0, 0);
   color: aliceblue;
-} */
+}

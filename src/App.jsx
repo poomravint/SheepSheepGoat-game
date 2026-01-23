@@ -7,11 +7,13 @@ import Namebox from './components/Namebox.jsx'
 import Rolebox from './components/Rolebox.jsx'
 import Matchingbox from './components/Matchingbox.jsx'
 import Showmatching from './components/Showmatching.jsx'
+import Conclusion from './components/Conclusion.jsx'
 
 function App() {
   const [groupname, setGroupname] = useState([])
   const [grouprole, setGrouprole] = useState([])
   const [results, setResults] = useState([])
+  const [start, setStart] = useState(false)
 
   return (
     <>
@@ -20,8 +22,9 @@ function App() {
         <Namebox groupname={groupname} setGroupname={setGroupname}/>
         <Rolebox grouprole={grouprole} setGrouprole={setGrouprole}/>
       </div>
-      <Matchingbox groupname={groupname} grouprole={grouprole} results={results} setResults={setResults}/>
-      <Showmatching results={results}/>
+      <Matchingbox groupname={groupname} grouprole={grouprole} results={results} setResults={setResults} start={start} setStart={setStart}/>
+      <Showmatching results={results} start={start} setStart={setStart}/>
+      <Conclusion results={results} start={start}/>
     </>
   )
 }

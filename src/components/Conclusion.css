@@ -1,0 +1,54 @@
+.reset-btn{
+
+
+margin-top: 20px;
+  height: 30px;
+  /* border-radius: 10px; */
+  border: none;
+  background-color: rgb(255, 0, 0);
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.modal-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal {
+  background: white;
+  color: black;
+  padding: 20px;
+  border-radius: 12px;
+  text-align: center;
+}
+
+.modal-actions {
+  display: flex;
+  justify-content: center;
+  gap: 12px; /* 🔥 ระยะห่างระหว่างปุ่ม */
+}
+.modal-actions button {
+  padding: 8px 16px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 14px;
+  transition: 0.2s;
+}
+
+.modal-actions button:first-child {
+  background-color: #4caf50; /* เขียว */
+  color: white;
+}
+
+.modal-actions button:last-child {
+  background-color: #f44336; /* แดง */
+  color: white;
+}

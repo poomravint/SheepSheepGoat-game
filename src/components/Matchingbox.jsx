@@ -1,11 +1,17 @@
 import { useState } from "react";
 import { getWord } from "./wordPair";
+import "./Matchingbox.css"
 
-const Matchingbox = ({ groupname, grouprole, results, setResults }) => {
+const Matchingbox = ({ groupname, grouprole, results, setResults, start, setStart }) => {
   const word = getWord();
 
   //* Shuffle item function
   const shuffle = (item) => [...item].sort(() => Math.random() - 0.5);
+
+  const handleClick = () => {
+    handlematching();
+    toggleStatus();
+  }
 
   const handlematching = () => {
     if (groupname.length === 0 && grouprole.length === 0) {
@@ -41,14 +47,19 @@ const Matchingbox = ({ groupname, grouprole, results, setResults }) => {
  
   };
 
+  const toggleStatus = () => {
+    console.log(start)
+    start === true ? setStart(!start) : ""
+  }
+
   return (
     <>
-      <div>
+      <div className="list-content">
         <p>
-          Member : {groupname.length} Role : {grouprole.length}
+          Member : <strong>{groupname.length}</strong> Role : <strong>{grouprole.length}</strong>
         </p>
-        <button className="random-button" onClick={handlematching}>
-          Random
+        <button className="random-button" onClick={handleClick}>
+          <strong>Random</strong> 
         </button>
       </div>
     </>
