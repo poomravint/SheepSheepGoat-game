@@ -74,9 +74,15 @@ const Conclusion = ({ results, start, realans }) => {
     <>
       {/* Show alive players for each team */}
       <div className="alive-box">
-        <p>WhiteSheep : {aliveCount.WhiteSheep}</p>
-        <p>BlackSheep : {aliveCount.BlackSheep}</p>
-        <p>Goat : {aliveCount.Goat}</p>
+        <div className="whitesheep-alivebox">
+          <p><strong>{aliveCount.WhiteSheep}</strong> 🤍</p>
+        </div>
+        <div className="blacksheep-alivebox">
+          <p><strong>{aliveCount.BlackSheep}</strong> 🖤</p>
+        </div>
+        <div className="goat-alivebox">
+          <p><strong>{aliveCount.Goat}</strong> 🩶</p>
+        </div>
       </div>
 
       <div className="card-container">

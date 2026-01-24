@@ -1,12 +1,44 @@
-.btn-box{
-  display: flex;        /* 🔥 สำคัญ */
-  gap: 20px;            /* ระยะห่างระหว่างปุ่ม */
+.alive-box {
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+  color: rgb(231, 69, 69);
+}
+
+.whitesheep-alivebox {
+  
+  width: 60px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.blacksheep-alivebox {
+ 
+  width: 60px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.goat-alivebox {
+  
+  width: 60px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-box {
+  display: flex; /* 🔥 สำคัญ */
+  gap: 20px; /* ระยะห่างระหว่างปุ่ม */
   justify-content: center; /* (เลือกได้) จัดให้อยู่กลาง */
   margin-top: 20px;
 }
 
-.reset-btn{
-margin-top: 20px;
+.reset-btn {
+  margin-top: 20px;
   height: 30px;
   /* border-radius: 10px; */
   border: none;
@@ -16,7 +48,7 @@ margin-top: 20px;
   font-weight: bold;
 }
 
-.goat-btn{
+.goat-btn {
   margin-top: 20px;
   height: 30px;
   /* border-radius: 10px; */
@@ -30,7 +62,7 @@ margin-top: 20px;
 .modal-backdrop {
   position: fixed;
   inset: 0;
-  background: rgba(0,0,0,0.5);
+  background: rgba(0, 0, 0, 0.5);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -77,7 +109,7 @@ margin-top: 20px;
   text-align: center;
 }
 
-.modal-goatpopup input{
+.modal-goatpopup input {
   margin-bottom: 15px;
   text-align: center;
 }
