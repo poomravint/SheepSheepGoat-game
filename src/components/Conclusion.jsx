@@ -1,4 +1,4 @@
-import { use, useState } from "react";
+import { useEffect, useState } from "react";
 import CardClusion from "./CardConclusion";
 import "./Conclusion.css";
 import Conclusion_RevealPopup from "./Conclusion_RevealPopup";
@@ -7,7 +7,26 @@ import Conclusion_GoatResult from "./Conclusion_GoatResult";
 
 const Conclusion = ({ results, start, realans }) => {
   // สร้าง state เปิด/ปิด ให้เท่ากับจำนวนการ์ด
-  const [openCards, setOpenCards] = useState(Array(results.length).fill(false));
+  const [openCards, setOpenCards] = useState([]);
+  //! 🔥 reset อัตโนมัติ เมื่อ results เปลี่ยน (สุ่มใหม่)
+  useEffect(() => {
+    setOpenCards(Array(results.length).fill(false));
+  }, [results]);
+
+  //! Goat auto Popup
+  useEffect(() => {
+     // หา index ของการ์ด Goat ที่ถูกเปิด
+  const goatIndex = openCards.findIndex(
+    (isOpen, index) =>
+      isOpen === true && results[index]?.role === "Goat"
+  );
+
+  // ถ้าเจอ Goat และ popup ยังไม่เปิด
+  if (goatIndex !== -1 && !goatpopup && !goatresultpopup) {
+    setGoatPopup(true);
+  }
+  }, [openCards]);
+
   //* Popup State
   const [pendingIndex, setPendingIndex] = useState(null);
   const [goatpopup, setGoatPopup] = useState(false);
@@ -35,10 +54,6 @@ const Conclusion = ({ results, start, realans }) => {
 
   const handleReset = () => {
     setOpenCards(Array(results.length).fill(false));
-  };
-
-  const toggleGoatpopup = () => {
-    setGoatPopup(true);
   };
 
   const confirmgoatAns = () => {
@@ -73,17 +88,25 @@ const Conclusion = ({ results, start, realans }) => {
   return (
     <>
       {/* Show alive players for each team */}
-      <div className="alive-box">
-        <div className="whitesheep-alivebox">
-          <p><strong>{aliveCount.WhiteSheep}</strong> 🤍</p>
+      {start && (
+        <div className="alive-box">
+          <div className="whitesheep-alivebox">
+            <p>
+              <strong>{aliveCount.WhiteSheep}</strong> 🤍
+            </p>
+          </div>
+          <div className="blacksheep-alivebox">
+            <p>
+              <strong>{aliveCount.BlackSheep}</strong> 🖤
+            </p>
+          </div>
+          <div className="goat-alivebox">
+            <p>
+              <strong>{aliveCount.Goat}</strong> 🩶
+            </p>
+          </div>
         </div>
-        <div className="blacksheep-alivebox">
-          <p><strong>{aliveCount.BlackSheep}</strong> 🖤</p>
-        </div>
-        <div className="goat-alivebox">
-          <p><strong>{aliveCount.Goat}</strong> 🩶</p>
-        </div>
-      </div>
+      )}
 
       <div className="card-container">
         {start &&
@@ -96,15 +119,6 @@ const Conclusion = ({ results, start, realans }) => {
               onClick={() => handleClick(index)}
             />
           ))}
-      </div>
-
-      <div className="btn-box">
-        <button onClick={handleReset} className="reset-btn">
-          Reset
-        </button>
-        <button onClick={toggleGoatpopup} className="goat-btn">
-          GOAT
-        </button>
       </div>
 
       {/* Show Role Popup */}

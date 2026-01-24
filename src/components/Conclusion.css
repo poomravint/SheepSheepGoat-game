@@ -30,34 +30,6 @@
   justify-content: center;
 }
 
-.btn-box {
-  display: flex; /* 🔥 สำคัญ */
-  gap: 20px; /* ระยะห่างระหว่างปุ่ม */
-  justify-content: center; /* (เลือกได้) จัดให้อยู่กลาง */
-  margin-top: 20px;
-}
-
-.reset-btn {
-  margin-top: 20px;
-  height: 30px;
-  /* border-radius: 10px; */
-  border: none;
-  background-color: rgb(255, 0, 0);
-  color: white;
-  cursor: pointer;
-  font-weight: bold;
-}
-
-.goat-btn {
-  margin-top: 20px;
-  height: 30px;
-  /* border-radius: 10px; */
-  border: none;
-  background-color: rgb(148, 147, 147);
-  color: white;
-  cursor: pointer;
-  font-weight: bold;
-}
 
 .modal-backdrop {
   position: fixed;
