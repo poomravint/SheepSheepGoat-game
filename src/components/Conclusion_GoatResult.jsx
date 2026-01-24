@@ -1,4 +1,4 @@
-const Conclusion_GoatResult = ({ result, onClose }) => {
+const Conclusion_GoatResult = ({ result, realans, goatanswer, onClose }) => {
   return (
     <div className="modal-backdrop">
       <div className="modal-goatpopup">
@@ -7,6 +7,9 @@ const Conclusion_GoatResult = ({ result, onClose }) => {
         ) : (
           <h3>❌ You are not a sheep ❌</h3>
         )}
+        <span>Your answer : <strong>{goatanswer}</strong> </span>
+        <span><br />Correct answer : <strong>{realans}</strong></span>
+        <p></p>
         <div className="modal-actions">
           <button onClick={onClose}>Close</button>
         </div>

@@ -15,6 +15,7 @@ const Conclusion = ({ results, start, realans }) => {
   useEffect(() => {
     setOpenCards(Array(results.length).fill(false));
     setPrevPopup(false);
+    setGoatAnswer("");
   }, [results]);
 
   //! Goat auto Popup
@@ -64,7 +65,6 @@ const Conclusion = ({ results, start, realans }) => {
     if (realans === goatanswer) setGoatResult(true);
     else setGoatResult(false);
 
-    setGoatAnswer("");
     setGoatPopup(false);
     setPrevPopup(true);
     setGoatResultPopup(true);
@@ -147,7 +147,7 @@ const Conclusion = ({ results, start, realans }) => {
       )}
 
       {goatresultpopup && (
-        <Conclusion_GoatResult result={goatresult} onClose={closegoatresult} />
+        <Conclusion_GoatResult result={goatresult} realans={realans} goatanswer={goatanswer} onClose={closegoatresult} />
       )}
     </>
   );
