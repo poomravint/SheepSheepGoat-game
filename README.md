@@ -17,7 +17,7 @@ And a goat you need to answer the word that whitesheep got. you can answer anyti
 If the vote is tied you need to vote again until you can get someone to remove but you can vote only guys thats the vote is tied.
 
 
-Try to play : <a href="https://poomravint.github.io/Werewolf-Game/](https://poomravint.github.io/SheepSheepGoat-game/">
+Try to play : <a href="https://poomravint.github.io/SheepSheepGoat-game/">
      🐑View Demo
   </a><br>
 ! This project support only all of devices.
