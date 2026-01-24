@@ -2,34 +2,34 @@
   display: flex;
   justify-content: center;
   margin-top: 15px;
-  color: rgb(231, 69, 69);
 }
 
 .whitesheep-alivebox {
-  
   width: 60px;
   height: 40px;
   display: flex;
   align-items: center;
   justify-content: center;
+  background-color: rgba(0, 0, 0, 0.562);
 }
 .blacksheep-alivebox {
- 
   width: 60px;
   height: 40px;
   display: flex;
   align-items: center;
   justify-content: center;
+  background-color: rgba(255, 255, 255, 0.562);
+  color: black;
 }
 .goat-alivebox {
-  
   width: 60px;
   height: 40px;
   display: flex;
   align-items: center;
   justify-content: center;
+  background-color: rgba(255, 146, 4, 0.562);
+  color: #ffffff;
 }
-
 
 .modal-backdrop {
   position: fixed;
@@ -81,9 +81,7 @@
   text-align: center;
 }
 
-
 .modal-goatpopup input {
   margin-bottom: 15px;
   text-align: center;
 }
-
