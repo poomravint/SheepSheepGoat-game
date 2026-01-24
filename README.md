@@ -1,16 +1,22 @@
-# React + Vite
+# SheepSheepGoat Game
+This is a mini project for play a game which inspried by Undercover
+This game need player more than 4 players
+In this game will seperate player to 3 teams
+- Frist team Whitesheep : The team has the most player in team
+- Second team Blacksheep : The team has player/2 from Whitesheep team
+- Last team Goat : The team has a only one
+When the game is the Whitesheep team and Blacksheep team will get a different word but it will semilar and a Goat will get no any word.
+Then random a player to hint a word that you got and a next one by clockwise need to hint your word that you got until the last one when the last give a hint you need to choose someone to remove and do it until in the game has only one team.
+And a goat you need to answer the word that whitesheep got. you can answer anytime except end of the round that you still play, show you role then answer or you are choosen to remove then answer.
+The rules :
+- The frist one : You shouldn't reveal your role except Goat.
+- The second one : You shouldn't tell your word to friends next to you.
+- The last one : You can only give a hint by a word not a sentence.
+If the vote is tied you need to vote again until you can get someone to remove but you can vote only guys thats the vote is tied.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## React Compiler
-
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Try to play : <a href="https://poomravint.github.io/Werewolf-Game/](https://poomravint.github.io/SheepSheepGoat-game/">
+     🐑View Demo
+  </a><br>
+! This project support only all of devices.
+Enjoy your time!
