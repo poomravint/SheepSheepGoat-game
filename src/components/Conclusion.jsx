@@ -8,9 +8,13 @@ import Conclusion_GoatResult from "./Conclusion_GoatResult";
 const Conclusion = ({ results, start, realans }) => {
   // สร้าง state เปิด/ปิด ให้เท่ากับจำนวนการ์ด
   const [openCards, setOpenCards] = useState([]);
+  // Prevent Goat Popup Bug
+  const [prevPopup, setPrevPopup] = useState(false);
+
   //! 🔥 reset อัตโนมัติ เมื่อ results เปลี่ยน (สุ่มใหม่)
   useEffect(() => {
     setOpenCards(Array(results.length).fill(false));
+    setPrevPopup(false);
   }, [results]);
 
   //! Goat auto Popup
@@ -22,7 +26,7 @@ const Conclusion = ({ results, start, realans }) => {
   );
 
   // ถ้าเจอ Goat และ popup ยังไม่เปิด
-  if (goatIndex !== -1 && !goatpopup && !goatresultpopup) {
+  if (goatIndex !== -1 && !goatpopup && !goatresultpopup && !prevPopup) {
     setGoatPopup(true);
   }
   }, [openCards]);
@@ -62,11 +66,13 @@ const Conclusion = ({ results, start, realans }) => {
 
     setGoatAnswer("");
     setGoatPopup(false);
+    setPrevPopup(true);
     setGoatResultPopup(true);
   };
 
   const closegoatAns = () => {
     setGoatPopup(false);
+    setPrevPopup(true);
   };
 
   const closegoatresult = () => {
