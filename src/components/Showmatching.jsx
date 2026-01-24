@@ -3,8 +3,7 @@ import Card from "./Card.jsx";
 import "./Card.css";
 
 const Showmatching = ({ results, start, setStart }) => {
-  const [openIndex, setOpenIndex] = useState(null);
-  const [ccstatus, setCCStatus] = useState(false);
+  const [openIndex, setOpenIndex] = useState(null); 
 
   const handleClick = (index) => {
     setOpenIndex(openIndex === index ? null : index);
@@ -30,8 +29,8 @@ const Showmatching = ({ results, start, setStart }) => {
             ))}
         </div>
       }
-      {!start && <button className="start-btn" onClick={toggleStatus}>
-        {start === false ? "Start" : "Pause"}
+      {results.length > 0 && !start && <button className="start-btn" onClick={toggleStatus}>
+        Start
       </button>}
     </>
   );

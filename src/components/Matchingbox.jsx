@@ -63,14 +63,20 @@ const Matchingbox = ({
   return (
     <>
       <div className="list-content">
-        <p>
-          Member : <strong>{groupname.length}</strong> Role :{" "}
-          <strong>{grouprole.length}</strong>
-        </p>
-        <button className="random-button" onClick={handleClick}>
-          <strong>Random</strong>
-        </button>
+        <div className="list-content-member">
+          <p>
+            🐑 x <strong>{groupname.length}</strong>
+          </p>
+        </div>
+        <div className="list-content-role">
+          <p>
+            🐐 x <strong>{grouprole.length}</strong>
+          </p>
+        </div>
       </div>
+      <button className="random-button" onClick={handleClick}>
+        <strong>Random</strong>
+      </button>
     </>
   );
 };
