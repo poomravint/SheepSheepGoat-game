@@ -2,7 +2,6 @@
    display: flex;
    justify-content: center;  /* จัดกึ่งกลางแนวนอน */
   align-items: center;
-  margin: 20px auto;  
    
 }
 
@@ -27,4 +26,9 @@
   border: 2px solid #ffffff;
   background-color: #ffffff;
   padding: 10px;
+}
+
+.dev-by{
+  font-size: 10px;
+  color: rgba(0, 0, 0, 0.418);
 }

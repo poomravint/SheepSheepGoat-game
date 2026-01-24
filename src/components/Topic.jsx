@@ -15,6 +15,7 @@ const   Topic = () => {
           <h1>GOAT</h1>
         </div>
       </div>
+      <span className="dev-by">Developed by Ravint Wongwaro</span>
     </>
   );
 }
