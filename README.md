@@ -22,3 +22,11 @@ Try to play : <a href="https://poomravint.github.io/SheepSheepGoat-game/">
   </a><br>
 ! This project support only all of devices.
 Enjoy your time!
+
+***How to update the project***
+after clone this repo, follow this commands
+```bash
+cd/sheepsheepgoat-game
+npm install
+npm run dev
+```
