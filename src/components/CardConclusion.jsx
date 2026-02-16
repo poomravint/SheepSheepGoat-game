@@ -3,6 +3,17 @@ import "./CardConclusion.css"
 
 const CardClusion = ({name,role, isOpen, onClick}) => {
   
+const RoleColor = (role) => {
+  switch (role) {
+    case "WhiteSheep":
+      return "whitesheep-style";
+    case "BlackSheep":
+      return "blacksheep-style";
+    default:
+      return "goat-style";
+  }
+}
+
   return (
     <>
       <div className="card" onClick={onClick}>
@@ -13,7 +24,7 @@ const CardClusion = ({name,role, isOpen, onClick}) => {
         </div>
 
         {/* ด้านหลัง */}
-        <div className="ccard-back">
+        <div className={`ccard-back ${RoleColor(role)}`}>
           <h3>{name}</h3>
           <h3>{role}</h3>
         </div>

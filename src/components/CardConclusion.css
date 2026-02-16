@@ -46,11 +46,11 @@
 }
 
 .ccard-front {
-  background-color: rgb(0, 0, 0);
+  background-color: rgba(204, 43, 43, 0.812);
   color: white;
 }
 .ccard-back {
-  background-color: rgb(183, 184, 185);
+  /* background-color: rgb(183, 184, 185); */
   transform: rotateY(180deg);
 }
 
@@ -65,4 +65,17 @@
   transition: 0.2s;
   background-color: rgb(0, 0, 0);
   color: aliceblue;
+}
+
+.whitesheep-style {
+  background-color: white;
+}
+
+.blacksheep-style {
+  background-color: black;
+  color: white;
+}
+
+.goat-style {
+  background-color: rgba(255, 146, 4, 0.562);
 }

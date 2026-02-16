@@ -1,12 +1,12 @@
 import { useState } from "react";
-import { roles } from "./roleUtils";
+// import { roles } from "./roleUtils";
 import "./Rolebox.css"
 
 const Rolebox = ({ grouprole, setGrouprole }) => {
   const [white_num, setWhite_num] = useState("");
   const [black_num, setBlack_num] = useState("");
   const [goat_num, setGoat_num] = useState("");
-  const roleOptions = Object.keys(roles);
+  // const roleOptions = Object.keys(roles);
 
   const handleAddRole = () => {
     setGrouprole(null)
