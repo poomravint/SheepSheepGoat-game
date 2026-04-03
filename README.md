@@ -20,7 +20,7 @@ If the vote is tied you need to vote again until you can get someone to remove b
 Try to play : <a href="https://poomravint.github.io/SheepSheepGoat-game/">
      🐑View Demo
   </a><br>
-! This project support only all of devices.
+! This project support all of devices.
 Enjoy your time!
 
 ***How to update the project***
